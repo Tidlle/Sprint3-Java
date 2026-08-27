@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>VitalPet - Dashboard</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments/nav :: topo('dashboard')}"></div>
+<main>
+    <h1>Resumo operacional</h1>
+    <p style="color:#5b6b62;">
+        Bem-vindo(a), <span th:text="${usuarioNome}">usuário</span>
+        (<span th:text="${usuarioRole}">perfil</span>)
+    </p>
+
+    <div class="resumo-grid">
+        <div class="item">
+            <div class="valor" th:text="${resumo.clinicasAtivas()}">0</div>
+            <div class="rotulo">Clínicas ativas</div>
+        </div>
+        <div class="item">
+            <div class="valor" th:text="${resumo.tutoresAtivos()}">0</div>
+            <div class="rotulo">Tutores ativos</div>
+        </div>
+        <div class="item">
+            <div class="valor" th:text="${resumo.petsAtivos()}">0</div>
+            <div class="rotulo">Pets ativos</div>
+        </div>
+        <div class="item">
+            <div class="valor" th:text="${resumo.veterinariosAtivos()}">0</div>
+            <div class="rotulo">Veterinários ativos</div>
+        </div>
+        <div class="item">
+            <div class="valor" th:text="${resumo.consultasAgendadas()}">0</div>
+            <div class="rotulo">Consultas agendadas</div>
+        </div>
+        <div class="item">
+            <div class="valor" th:text="${resumo.consultasConcluidas()}">0</div>
+            <div class="rotulo">Consultas concluídas</div>
+        </div>
+        <div class="item">
+            <div class="valor" th:text="${resumo.alertasPendentes()}">0</div>
+            <div class="rotulo">Alertas pendentes</div>
+        </div>
+        <div class="item">
+            <div class="valor" th:text="${resumo.alertasAltaPrioridade()}">0</div>
+            <div class="rotulo">Alertas de alta prioridade</div>
+        </div>
+        <div class="item">
+            <div class="valor" th:text="${'R$ ' + resumo.faturamentoTotal()}">R$ 0</div>
+            <div class="rotulo">Faturamento (consultas concluídas)</div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
