@@ -38,6 +38,7 @@
         <button type="submit">Filtrar</button>
     </form>
 
+    <div class="tabela-wrap">
     <table>
         <thead>
         <tr>
@@ -72,6 +73,7 @@
         </tr>
         </tbody>
     </table>
+    </div>
 
     <div class="paginacao">
         <a th:if="${!pagina.first}" class="btn secundario" th:href="@{/web/alertas(status=${status}, prioridade=${prioridade}, page=${pagina.number - 1})}">Anterior</a>

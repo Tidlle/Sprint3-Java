@@ -14,7 +14,7 @@
     </header>
     <nav class="menu" sec:authorize="isAuthenticated()">
         <a th:href="@{/web/dashboard}" th:classappend="${secao == 'dashboard'} ? 'ativo'">Dashboard</a>
-        <span sec:authorize="hasRole('ADMIN')">
+        <span class="grupo-admin" sec:authorize="hasRole('ADMIN')">
             <a th:href="@{/web/clinicas}" th:classappend="${secao == 'clinicas'} ? 'ativo'">Clínicas</a>
             <a th:href="@{/web/veterinarios}" th:classappend="${secao == 'veterinarios'} ? 'ativo'">Veterinários</a>
             <a th:href="@{/web/tutores}" th:classappend="${secao == 'tutores'} ? 'ativo'">Tutores</a>

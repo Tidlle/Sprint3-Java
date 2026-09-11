@@ -6,10 +6,10 @@
     <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
-<main style="max-width: 380px; margin-top: 4rem;">
-    <div class="card">
+<div class="login-wrap">
+    <div class="login-card">
         <h1>VitalPet</h1>
-        <p style="color:#5b6b62; margin-top: -0.5rem;">Continuidade do cuidado veterinário</p>
+        <p class="subtitulo">Continuidade do cuidado veterinário</p>
 
         <p class="alerta-flash erro" th:if="${erro}">E-mail ou senha inválidos.</p>
         <p class="alerta-flash sucesso" th:if="${logout}">Você saiu do sistema.</p>
@@ -26,6 +26,6 @@
             <button type="submit">Entrar</button>
         </form>
     </div>
-</main>
+</div>
 </body>
 </html>

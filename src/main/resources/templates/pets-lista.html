@@ -21,6 +21,7 @@
         <a class="btn secundario" th:href="@{/web/pets/novo}">Novo pet</a>
     </form>
 
+    <div class="tabela-wrap">
     <table>
         <thead>
         <tr>
@@ -56,6 +57,7 @@
         </tr>
         </tbody>
     </table>
+    </div>
 
     <div class="paginacao">
         <a th:if="${!pagina.first}" class="btn secundario" th:href="@{/web/pets(nome=${nome}, page=${pagina.number - 1})}">Anterior</a>

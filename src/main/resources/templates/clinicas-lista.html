@@ -21,6 +21,7 @@
         <a class="btn secundario" th:href="@{/web/clinicas/novo}">Nova clínica</a>
     </form>
 
+    <div class="tabela-wrap">
     <table>
         <thead>
         <tr>
@@ -58,6 +59,7 @@
         </tr>
         </tbody>
     </table>
+    </div>
 
     <div class="paginacao">
         <a th:if="${!pagina.first}" class="btn secundario" th:href="@{/web/clinicas(nome=${nome}, page=${pagina.number - 1})}">Anterior</a>

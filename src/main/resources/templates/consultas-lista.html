@@ -26,6 +26,7 @@
         <a class="btn secundario" th:href="@{/web/consultas/novo}">Nova consulta</a>
     </form>
 
+    <div class="tabela-wrap">
     <table>
         <thead>
         <tr>
@@ -59,6 +60,7 @@
         </tr>
         </tbody>
     </table>
+    </div>
 
     <div class="paginacao">
         <a th:if="${!pagina.first}" class="btn secundario" th:href="@{/web/consultas(status=${status}, page=${pagina.number - 1})}">Anterior</a>
