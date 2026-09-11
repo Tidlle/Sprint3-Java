@@ -26,6 +26,23 @@ A solução acompanha o pet **depois** da consulta: ao finalizar um atendimento,
 
 A API REST, o Swagger e a collection do Postman entregues em sprints anteriores continuam funcionando normalmente e sem autenticação (ver [API REST](#api-rest-swagger-e-postman)).
 
+## Vídeo de demonstração
+
+[Assista no YouTube](https://www.youtube.com/watch?v=V2AA6j5g5Dc) — demonstração da aplicação em funcionamento, com as principais funcionalidades da Sprint 3 de Java Advanced.
+
+## Capturas de tela da aplicação
+
+| Tela | Print |
+|---|---|
+| Login | ![Login](assets/print_tela_login.png) |
+| Dashboard | ![Dashboard](assets/print_tela_dashboard.png) |
+| Clínicas | ![Clínicas](assets/print_tela_clinica.png) |
+| Veterinários | ![Veterinários](assets/print_tela_veterinario.png) |
+| Tutores | ![Tutores](assets/print_tela_tutores.png) |
+| Pets | ![Pets](assets/print_tela_pets.png) |
+| Consultas | ![Consultas](assets/print_tela_consultas.png) |
+| Alertas | ![Alertas](assets/print_tela_alertas.png) |
+
 ## Stack tecnológica
 
 - Java 17
